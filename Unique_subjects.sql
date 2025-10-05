@@ -50,3 +50,8 @@
 --  - They teach subject 2 in department 1.
 --  - They teach subject 3 in department 1.
 --  - They teach subject 4 in department 1.
+
+--Solution
+
+# Write your MySQL query statement below
+select distinct teacher_id , count(distinct subject_id)  as cnt from teacher group by teacher_id;
